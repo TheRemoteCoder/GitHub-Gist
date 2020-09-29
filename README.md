@@ -3,6 +3,7 @@
 # Snippet collection
 
 - [About](#about)
+- [Todo](#todo)
 
 <br>
 
@@ -19,3 +20,9 @@ This repository is intended to aid in delivering better code quality than from a
 ### Source
 
 - [gist.github](https://gist.github.com/ChristianOellers)
+
+<br><br>
+
+## Todo
+
+- PHPCS: Replace 'WP Coding Standard' by a generic standard
