@@ -5,6 +5,7 @@
 /tmp
 
 # Composer
+vendor
 composer.lock
 
 # Dependencies
