@@ -1,0 +1,41 @@
+Magento 1.6 has a Prototype.js debugger with eval() console.
+
+It seems to be unused by the system itself and may be redundant.
+Here's how to implement it though.
+
+
+----------------------------------------------------------------------------------------------------------------------- 1. Extend Layout XML
+
+XML file:
+- \app\design\frontend\base\default\layout\page.xml
+
+Required JS:
+- \js\prototype\*
+
+Add JavaScripts:
+- window.js         : Required by debugger (e.g. HTML view)
+- window_ext.js     : Optional: Cookie for debugger status
+- debug.js          : Base class (no need to call directly)
+- extended_debug.js : Debugger with eval(). Call with: showExtendedDebug()
+
+Example XML:
+  <action method="addJs"><script>prototype/window.js</script></action>
+  <action method="addJs"><script>prototype/window_ext.js</script></action>
+  <action method="addJs"><script>prototype/debug.js</script></action>
+  <action method="addJs"><script>prototype/extended_debug.js</script></action>
+
+
+------------------------------------------------------------------------------------------------------------------- 2. Extend Page templates
+
+Open any of the page templates. This is just an example ...
+The debugger will appear as drag&drop popup.
+
+<head>
+  <?php echo $this->getChildHtml('head'); ?>
+  <link rel="stylesheet" type="text/css" href="js/prototype/windows/themes/default.css">
+  <link rel="stylesheet" type="text/css" href="js/prototype/windows/themes/debug.css">
+</head>
+
+<script>
+  showExtendedDebug();
+</script>

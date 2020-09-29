@@ -14,6 +14,15 @@
   "javascript.validate.enable": false,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
   "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
+  "intelephense.environment.documentRoot": "./live/",
+  "intelephense.format.enable": false,
+  "phpsab.fixerEnable": true,
+  "phpsab.executablePathCBF": "./vendor/bin/phpcbf",
+  "phpsab.executablePathCS": "./vendor/bin/phpcs",
+  "phpsab.snifferEnable": true,
+  "phpsab.autoConfigSearch": true,
+  "phpsab.snifferMode": "onSave",
+  "phpsab.debug": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
@@ -25,5 +34,13 @@
   },
   "[markdown]": {
     "editor.acceptSuggestionOnEnter": "off"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+  },
+  "[xml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   }
 }

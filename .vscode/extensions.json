@@ -1,7 +1,10 @@
 {
   "recommendations": [
+    "bmewburn.vscode-intelephense-client",
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "mehedidracula.php-namespace-resolver",
+    "valeryanm.vscode-phpsab",
   ]
 }
