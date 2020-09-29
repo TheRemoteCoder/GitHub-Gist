@@ -1,4 +1,4 @@
-//@flow
+// @flow
 
 /**
  * 2D vector calculations

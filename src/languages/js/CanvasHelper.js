@@ -1,4 +1,4 @@
-//@flow
+// @flow
 
 /**
  * Canvas 2D API helper functions.

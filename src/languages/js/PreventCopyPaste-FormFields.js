@@ -1,4 +1,4 @@
-//@flow
+// @flow
 
 /**
  * Prevent use of 'CTRL+v' or 'CTRL+V' in form fields that must not be copied.

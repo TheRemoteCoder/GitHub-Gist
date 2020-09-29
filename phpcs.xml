@@ -24,4 +24,30 @@
 	<!-- Only check PHP files -->
 	<arg name="extensions" value="php"/>
 
+
+	<!-- Use modified WordPress ruleset -->
+
+	<rule ref="WordPress">
+		<exclude name="Squiz.Commenting.InlineComment"/>
+		<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
+	</rule>
+
+	<rule ref="WordPress.WP.DeprecatedFunctions">
+		<properties>
+			<property name="minimum_supported_version" value="5.3"/>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array" value="CODECONUT, CCN, DRAWFULMIND, DFM"/>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="is_theme" value="true"/>
+		</properties>
+	</rule>
+
 </ruleset>

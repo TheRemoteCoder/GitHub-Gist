@@ -3,12 +3,11 @@
 -- Useful to synchronize a live DB to a DEV environment.
 -- Make sure to change multi-store URLs manually after applying this script.
 --
--- Tested with:
--- Magento CE 1.4 - 1.6
+-- Tested with: Magento CE 1.4 - 1.6
 
 -- ------------------------------------------------------------------------------------------------------------------------------ Store URLs
 
--- This overrides ALL stores!
+-- WARNING: Overrides ALL stores
 
 UPDATE `core_config_data`
 SET `value` = 'http://example.com/'
@@ -35,7 +34,7 @@ WHERE `core_config_data`.`path` = 'web/secure/base_js_url';
 
 ------------------------------------------------------------------------------------------------------------------------------------ Cookies
 
-/* May not be required for every shop */
+-- May not be required for every shop
 
 UPDATE `core_config_data`
 SET `value` = '3600'
@@ -56,8 +55,6 @@ WHERE `core_config_data`.`path` = 'web/browser_capabilities/cookies';
 UPDATE `core_config_data`
 SET `value` = '3600'
 WHERE `core_config_data`.`path` = 'admin/security/session_cookie_lifetime';
-
-/* */
 
 
 -- ------------------------------------------------------------------------------------------------------------------------- Control changes
