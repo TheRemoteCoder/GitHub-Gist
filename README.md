@@ -1,4 +1,4 @@
-![Teaser](teaser.png)
+![GitHub Gist](teaser.png)
 
 # Snippet collection
 
