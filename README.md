@@ -1,6 +1,8 @@
 ![GitHub Gist](teaser.png)
 
-# Snippet collection
+# GitHub Gist
+
+Snippet collection
 
 - [About](#about)
 - [Todo](#todo)
